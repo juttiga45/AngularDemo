@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>DataBinding</h4>
+      <h5>Propery Binding</h5>
+      <input type="text" [value]="message" />
+      <hr />
+      <h5>String Interpolation</h5>
+      {{ title }}
+      <hr />
+      <h5>Event Binding</h5>
+      <button class="btn btn-primary" (click)="getData()">Click</button>
+    </div>
+    <div class="col-sm-6">
+      <h4>Nested components</h4>
+      <app-nested></app-nested>
+      <hr />
+      <h5>Two way Data Binding</h5>
+      Enter the value : <input type="text" [(ngModel)]="name" />
+      <hr />
+      <p class="bindTxt">{{ name }}</p>
+    </div>
+    <app-child></app-child>
+  </div>
+</div>
